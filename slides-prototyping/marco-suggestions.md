@@ -35,3 +35,10 @@
        - only for modules with listeners
        - keep it thin, use the `ListenerAggregateInterface` instead!
     - nothing else in the Module!
+    
+ - config format:
+    - config must be serializable
+    - write a test for `Module#getConfig()`!
+       - `unserialize(serialize($module->getConfig())) == $module->getConfig()`
+    - anything referencing a class should use `::class`
+    - no magic constants! Reference module class constants!
