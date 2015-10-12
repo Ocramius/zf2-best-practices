@@ -1,5 +1,7 @@
 # where to start
 
+ - do you know where to start?
+ - did you discuss anything with the team?
  - design domain models first
  - import the framework later
  
