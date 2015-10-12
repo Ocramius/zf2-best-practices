@@ -22,6 +22,7 @@
     - custom zf2 autoloading
     - all the paths that are unused
     - keep the `Application` module (the error handling stuff is useful!)
- - start designing 
+ - start designing your module
+    - please use composer to autoload it (no more `getAutoloaderConfig`)
  - start integrating your domain with the app
  
