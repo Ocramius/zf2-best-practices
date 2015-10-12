@@ -26,3 +26,12 @@
     - please use composer to autoload it (no more `getAutoloaderConfig`)
  - start integrating your domain with the app
  
+# designing a module
+
+ - implement:
+    - `ConfigProviderInterface`
+    - `InitProviderInterface` (only for hacky modules)
+    - `BootstrapListenerInterface`
+       - only for modules with listeners
+       - keep it thin, use the `ListenerAggregateInterface` instead!
+    - nothing else in the Module!
