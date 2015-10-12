@@ -42,3 +42,8 @@
        - `unserialize(serialize($module->getConfig())) == $module->getConfig()`
     - anything referencing a class should use `::class`
     - no magic constants! Reference module class constants!
+    
+ - let's code a controller!
+    - actually, let's skip on controllers until more substantial stuff is done
+    - HTTP accessible page != working thing
+    - stop thinking that a working http page is your aim. Your aim is a working domain!
