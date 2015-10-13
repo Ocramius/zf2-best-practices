@@ -75,4 +75,4 @@
        - don't build web pages that need new domain logic
        - instead, build new domain logic that needs web pages
        - then build the frontend for it
-       
+       - userland interactions should have corresponding domain interactions
