@@ -125,3 +125,13 @@
     - you still have to respect HTTP response codes!
     - it will save you a lot of time (and hair)
     
+ - what about forms?
+    - forms are one of the last bits of your app
+       - usually, people design them first: ew!
+       - design domain first
+       - design command second
+       - then design the form
+    - how do you use a form?
+       - no object binding: consider filling using `$form->bindValues($presets)` manually
+       - no object hydration: consider using `$form->getData()` and `MyCommand::fromFormData($data)`
+   
