@@ -88,6 +88,7 @@
     
  - routing
     - each route on its own
+    - strict route constraints (use those regular expressions!)
     - nested routes are not really necessary, unless you are concerned about performance
     - consider using class constants for route names (easier to refactor)
     - one route <=> one controller (bijective)
