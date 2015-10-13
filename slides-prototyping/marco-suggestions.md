@@ -47,3 +47,16 @@
     - actually, let's skip on controllers until more substantial stuff is done
     - HTTP accessible page != working thing
     - stop thinking that a working http page is your aim. Your aim is a working domain!
+    
+ - let's code the service layer!
+    - actually, let's first make sure our domain is working
+    
+ - where do we keep our domain logic?
+    - separate module? No.
+    - so where?
+ 
+ - clarifying the module system:
+    - modules are designed for reuse
+    - modules for ACL, error handling, mailers, etc... these are reusable
+    - reusable modules are "infrastructure" modules
+    - your app code (and your domain) are not reusable
