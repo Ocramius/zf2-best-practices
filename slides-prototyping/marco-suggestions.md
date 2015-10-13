@@ -84,6 +84,7 @@
        - then build the frontend for it
        - userland interactions should have corresponding domain interactions
 
+# controllers 
  - single action controllers
     - you can name each controller after the described interaction
     - there is no need to group interactions: use namespaces for that
@@ -94,28 +95,28 @@
     - may be simpler to move to middlewares in the future
     - we will get back at controller logic later
     
- - routing
-    - each route on its own
-    - strict route constraints (use those regular expressions!)
-    - nested routes are not really necessary, unless you are concerned about performance
-    - consider using class constants for route names (easier to refactor)
-    - one route <=> one controller (bijective)
+# routing
+ - each route on its own
+ - strict route constraints (use those regular expressions!)
+ - nested routes are not really necessary, unless you are concerned about performance
+ - consider using class constants for route names (easier to refactor)
+ - one route <=> one controller (bijective)
 
- - services
-    - keep services as immutable as possible
-    - do not store mutable data in the service manager
-       - config is immutable
-       - mutable data in the service manager leads to service manager abuse (as a registry)
+# services
+ - keep services as immutable as possible
+ - do not store mutable data in the service manager
+    - config is immutable
+    - mutable data in the service manager leads to service manager abuse (as a registry)
        
- - back at controllers:
-    - each controller should usually do following:
-       - (optional) retrieve POST data, build a `command` and pass it down to the domain layer
-          - a command must be a valid and immutable object: we did all the validation before building it!
-       - pass data from the domain to the view
-          - can be arrays or a value objects
-             - value objects ensure better type-hinting
-             - value objects are easier to refactor
-             - value objects take some time to code, and view requirements change VERY often
+# back at controllers:
+ - each controller should usually do following:
+    - (optional) retrieve POST data, build a `command` and pass it down to the domain layer
+       - a command must be a valid and immutable object: we did all the validation before building it!
+    - pass data from the domain to the view
+       - can be arrays or a value objects
+          - value objects ensure better type-hinting
+          - value objects are easier to refactor
+          - value objects take some time to code, and view requirements change VERY often
  
  - should controllers follow REST principles?
     - probably only for GET
@@ -125,13 +126,13 @@
     - you still have to respect HTTP response codes!
     - it will save you a lot of time (and hair)
     
- - what about forms?
-    - forms are one of the last bits of your app
-       - usually, people design them first: ew!
-       - design domain first
-       - design command second
-       - then design the form
-    - how do you use a form?
-       - no object binding: consider filling using `$form->bindValues($presets)` manually
-       - no object hydration: consider using `$form->getData()` and `MyCommand::fromFormData($data)`
-    - MASSIVE simplification (trust me!)
+# what about forms?
+ - forms are one of the last bits of your app
+    - usually, people design them first: ew!
+    - design domain first
+    - design command second
+    - then design the form
+ - how do you use a form?
+    - no object binding: consider filling using `$form->bindValues($presets)` manually
+    - no object hydration: consider using `$form->getData()` and `MyCommand::fromFormData($data)`
+ - MASSIVE simplification (trust me!)
