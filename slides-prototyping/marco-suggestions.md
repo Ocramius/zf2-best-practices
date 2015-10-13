@@ -66,4 +66,6 @@
 # implementing the application logic
 
  - decide what web interface you want: Web-pages? API?
- - if it's an API, do you REALLY need an API?
+    - if it's an API, do you REALLY need an API?
+       - API
+    - we will go web-first for our case
