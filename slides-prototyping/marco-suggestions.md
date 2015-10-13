@@ -69,3 +69,10 @@
     - if it's an API, do you REALLY need an API?
        - API
     - we will go web-first for our case
+
+ - design your controllers after the domain endpoints, and not the opposite
+    - if you have control over the project:
+       - don't build web pages that need new domain logic
+       - instead, build new domain logic that needs web pages
+       - then build the frontend for it
+       
