@@ -1,3 +1,8 @@
+# what is this talk about?
+
+ - not about common mistakes (we have enough talks about that)
+ - more overview than in-depth code (you have enough practical refactoring/SOLID/etc talks out there)
+
 # where to start
 
  - do you know where to start?
