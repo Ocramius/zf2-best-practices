@@ -134,4 +134,4 @@
     - how do you use a form?
        - no object binding: consider filling using `$form->bindValues($presets)` manually
        - no object hydration: consider using `$form->getData()` and `MyCommand::fromFormData($data)`
-   
+    - MASSIVE simplification (trust me!)
