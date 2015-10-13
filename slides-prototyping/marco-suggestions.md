@@ -136,3 +136,7 @@
     - no object binding: consider filling using `$form->bindValues($presets)` manually
     - no object hydration: consider using `$form->getData()` and `MyCommand::fromFormData($data)`
  - MASSIVE simplification (trust me!)
+
+# persistence
+
+@TODO (this section highly depends on how the domain was implemented!)
