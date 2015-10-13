@@ -100,3 +100,13 @@
     - do not store mutable data in the service manager
        - config is immutable
        - mutable data in the service manager leads to service manager abuse (as a registry)
+       
+ - back at controllers:
+    - each controller should usually do following:
+       - (optional) retrieve POST data, build a `command` and pass it down to the domain layer
+          - a command must be a valid and immutable object: we did all the validation before building it!
+       - pass data from the domain to the view
+          - can be arrays or a value objects
+             - value objects ensure better type-hinting
+             - value objects are easier to refactor
+             - value objects take some time to code, and view requirements change VERY often
