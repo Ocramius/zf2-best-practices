@@ -94,3 +94,9 @@
     - nested routes are not really necessary, unless you are concerned about performance
     - consider using class constants for route names (easier to refactor)
     - one route <=> one controller (bijective)
+
+ - services
+    - keep services as immutable as possible
+    - do not store mutable data in the service manager
+       - config is immutable
+       - mutable data in the service manager leads to service manager abuse (as a registry)
