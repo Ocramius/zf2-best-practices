@@ -84,6 +84,7 @@
     - we still have to extend from `AbstractController` or `AbstractActionController`, due to weird
       `zendframework/zend-mvc` event flows
     - moving out single interactions is simpler
+    - may be simpler to move to middlewares in the future
     - we will get back at controller logic later
     
  - routing
