@@ -86,3 +86,8 @@
     - moving out single interactions is simpler
     - we will get back at controller logic later
     
+ - routing
+    - each route on its own
+    - nested routes are not really necessary, unless you are concerned about performance
+    - consider using class constants for route names (easier to refactor)
+    - one route <=> one controller (bijective)
