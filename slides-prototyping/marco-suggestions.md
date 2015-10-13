@@ -77,3 +77,8 @@
        - then build the frontend for it
        - userland interactions should have corresponding domain interactions
 
+ - single action controllers
+    - you can name each controller after the described interaction
+    - there is no need to group interactions: use namespaces for that
+    - we still have to extend from `AbstractController` or `AbstractActionController`, due to weird
+      `zendframework/zend-mvc` event flows
