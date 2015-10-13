@@ -60,3 +60,10 @@
     - modules for ACL, error handling, mailers, etc... these are reusable
     - reusable modules are "infrastructure" modules
     - your app code (and your domain) are not reusable
+ 
+ - now, after you implemented and tested your domain...
+ 
+# implementing the application logic
+
+ - decide what web interface you want: Web-pages? API?
+ - if it's an API, do you REALLY need an API?
