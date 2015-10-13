@@ -110,3 +110,12 @@
              - value objects ensure better type-hinting
              - value objects are easier to refactor
              - value objects take some time to code, and view requirements change VERY often
+ 
+ - should controllers follow REST principles?
+    - probably only for GET
+    - POST/PUT/DELETE are interesting for APIs, but we're just complicating things otherwise
+    - make all reads via GET
+    - design all user interactions as specific URLs + POST
+    - you still have to respect HTTP response codes!
+    - it will save you a lot of time (and hair)
+   
