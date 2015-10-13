@@ -41,6 +41,7 @@
     - write a test for `Module#getConfig()`!
        - `unserialize(serialize($module->getConfig())) == $module->getConfig()`
     - anything referencing a class should use `::class`
+    - service definitions should use `::class` rather than custom strings
     - no magic constants! Reference module class constants!
     
  - let's code a controller!
@@ -84,3 +85,4 @@
       `zendframework/zend-mvc` event flows
     - moving out single interactions is simpler
     - we will get back at controller logic later
+    
