@@ -89,6 +89,7 @@
     - there is no need to group interactions: use namespaces for that
     - we still have to extend from `AbstractController` or `AbstractActionController`, due to weird
       `zendframework/zend-mvc` event flows
+       - too bad: `DispatcherInterface` was already an awesome middleware :-(
     - moving out single interactions is simpler
     - may be simpler to move to middlewares in the future
     - we will get back at controller logic later
@@ -123,4 +124,4 @@
     - design all user interactions as specific URLs + POST
     - you still have to respect HTTP response codes!
     - it will save you a lot of time (and hair)
-   
+    
