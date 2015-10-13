@@ -61,6 +61,7 @@
     - modules for ACL, error handling, mailers, etc... these are reusable
     - reusable modules are "infrastructure" modules
     - your app code (and your domain) are not reusable
+    - a single app-specific module will usually suffice
  
  - now, after you implemented and tested your domain...
  
