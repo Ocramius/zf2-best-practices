@@ -82,3 +82,5 @@
     - there is no need to group interactions: use namespaces for that
     - we still have to extend from `AbstractController` or `AbstractActionController`, due to weird
       `zendframework/zend-mvc` event flows
+    - moving out single interactions is simpler
+    - we will get back at controller logic later
