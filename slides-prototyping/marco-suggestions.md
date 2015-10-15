@@ -148,3 +148,7 @@
  - clean every day
  - review problems day-by-day
  - keep your structure clean
+    - it is VERY SIMPLE to keep the structure clean
+       - factories
+       - clean configs
+       - no service location unless STRICTLY required
