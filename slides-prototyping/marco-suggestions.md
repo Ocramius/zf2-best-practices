@@ -41,6 +41,7 @@
        - only for modules with listeners
        - keep it thin, use the `ListenerAggregateInterface` instead!
     - nothing else in the Module!
+    - show example of clean module (`OcraCachedViewResolver`?)
     
  - config format:
     - config must be serializable
