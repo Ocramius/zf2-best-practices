@@ -70,6 +70,9 @@
     - your app code (and your domain) are not reusable
     - a single app-specific module will usually suffice
  
+ - on composer
+    - EVERY external symbol used in your module should cause a `composer.json` dependency addition
+ 
  - now, after you implemented and tested your domain...
  
 # implementing the application logic
