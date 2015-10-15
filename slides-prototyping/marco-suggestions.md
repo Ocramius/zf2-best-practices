@@ -169,3 +169,13 @@
        - very linear/measurable/predictable overhead
        - very stable code (less changes per hotfix)
        - keep technical debt controlled
+    - example (in man-minutes, as an example):
+       - `ServiceLocatorAware` service
+          - design in 1 hour
+             - includes while you are off (like in not listening to your partner, and thinking about code instead)
+          - code in 15 minutes
+          - test in 10
+          - addition of ~60 minutes of technical debt
+             - possible service location issues
+             - possible issues while refactoring
+
