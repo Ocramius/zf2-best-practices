@@ -187,3 +187,6 @@
           - test factory in 10 minutes (this is always an annoying one)
           - addition of ~15 minutes of technical debt
              - you will still have service location issues with the factory
+       - totals:
+          - `ServiceLocatorAware` service: 145 minutes
+          - service with proper DI: 110 minutes
