@@ -165,3 +165,4 @@
        - being able to detect bugs faster
        - very linear/measurable/predictable overhead
        - very stable code (less changes per hotfix)
+       - keep technical debt controlled
