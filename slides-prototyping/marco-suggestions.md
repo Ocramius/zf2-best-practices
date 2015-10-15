@@ -163,3 +163,5 @@
        - being able to upgrade your dependencies
           - semver is your friend (assuming you have all dependencies specified)
        - being able to detect bugs faster
+       - very linear/measurable/predictable overhead
+       - very stable code (less changes per hotfix)
