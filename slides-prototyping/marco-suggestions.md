@@ -29,6 +29,7 @@
     - keep the `Application` module (the error handling stuff is useful!)
  - start designing your module
     - please use composer to autoload it (no more `getAutoloaderConfig`)
+    - PSR-0 or PSR-4 structure, stop doing the weird `Module.php` stuff!
  - start integrating your domain with the app
  
 # designing a module
