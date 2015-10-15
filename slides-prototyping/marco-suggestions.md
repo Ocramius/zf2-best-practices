@@ -142,3 +142,9 @@
 # persistence
 
 @TODO (this section highly depends on how the domain was implemented!)
+
+# notes about productivity
+
+ - clean every day
+ - review problems day-by-day
+ - keep your structure clean
