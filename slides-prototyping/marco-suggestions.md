@@ -158,3 +158,8 @@
        - since it's a no-brainer, it is like "muscle-memory"
        - yes, it is boring
        - that's why you can think about other (more important) problems while you do it!
+    - by keeping the structure clean, you enable
+       - being able to apply massive rewrites (if needed)
+       - being able to upgrade your dependencies
+          - semver is your friend (assuming you have all dependencies specified)
+       - being able to detect bugs faster
