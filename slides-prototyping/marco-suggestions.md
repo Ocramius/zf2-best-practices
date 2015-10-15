@@ -153,3 +153,6 @@
        - clean configs
        - no service location unless STRICTLY required
        - it is FUCKING SIMPLE TO KEEP IT LIKE THAT!
+       - keeping the structure clean is a no-brainer (once you know how it's done)
+       - keeping the structure clean is very little time-consuming
+       - since it's a no-brainer, it is like "muscle-memory"
