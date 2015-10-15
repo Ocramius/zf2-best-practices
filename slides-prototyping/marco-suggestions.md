@@ -174,8 +174,16 @@
           - design in 1 hour
              - includes while you are off (like in not listening to your partner, and thinking about code instead)
           - code in 15 minutes
-          - test in 10
+          - test in 10 minutes
           - addition of ~60 minutes of technical debt
              - possible service location issues
              - possible issues while refactoring
-
+             - possible issues when changing service definitions
+       - service with proper DI
+          - design in 1 hour
+          - code in 15 minutes
+          - code factory 5 in minutes
+          - test in 5 minutes (yep, this got faster!)
+          - test factory in 10 minutes (this is always an annoying one)
+          - addition of ~15 minutes of technical debt
+             - you will still have service location issues with the factory
