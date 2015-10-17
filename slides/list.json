@@ -30,6 +30,7 @@
 
     "zf2-best-practices/importing-zf2/importing-zf2.html",
     "zf2-best-practices/importing-zf2/skeleton-application.html",
+    "zf2-best-practices/importing-zf2/cleanup-skeleton-application.html",
 
     "outro/thanks.html"
 ]
