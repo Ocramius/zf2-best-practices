@@ -64,6 +64,7 @@
     - so where?
  
  - clarifying the module system:
+    - don't eagerly split modules
     - modules are designed for reuse
     - modules for ACL, error handling, mailers, etc... these are reusable
     - reusable modules are "infrastructure" modules
