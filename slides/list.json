@@ -33,6 +33,7 @@
     "zf2-best-practices/importing-zf2/cleanup-skeleton-application.html",
     "zf2-best-practices/importing-zf2/keep-some-bits.html",
     "zf2-best-practices/importing-zf2/start-designing-your-module.html",
+    "zf2-best-practices/importing-zf2/start-integrating-the-domain-in-your-module.html",
 
     "outro/thanks.html"
 ]
