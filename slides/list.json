@@ -34,6 +34,7 @@
     "zf2-best-practices/importing-zf2/keep-some-bits.html",
     "zf2-best-practices/importing-zf2/start-designing-your-module.html",
     "zf2-best-practices/importing-zf2/start-integrating-the-domain-in-your-module.html",
+    "zf2-best-practices/importing-zf2/each-interaction-is-a-controller.html",
 
     "outro/thanks.html"
 ]
