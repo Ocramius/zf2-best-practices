@@ -10,7 +10,9 @@
     "introduction/i-work-on-zend-framework-2.html",
     "introduction/i-work-on-doctrine.html",
 
+    "zf2-best-practices/zf2-best-practices.html",
     "zf2-best-practices/what-is-this-talk-about/what-is-this-talk-about.html",
+    "zf2-best-practices/what-is-this-talk-about/not-about-mistakes.html",
 
     "outro/thanks.html"
 ]
