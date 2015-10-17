@@ -37,6 +37,7 @@
     "zf2-best-practices/importing-zf2/each-interaction-is-a-controller.html",
 
     "zf2-best-practices/module-implementation/the-module-class.html",
+    "zf2-best-practices/module-implementation/module-config.html",
 
     "outro/thanks.html"
 ]
