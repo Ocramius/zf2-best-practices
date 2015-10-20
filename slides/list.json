@@ -28,6 +28,8 @@
     "zf2-best-practices/where-to-start/play-around-with-the-domain.html",
     "zf2-best-practices/where-to-start/discover-interactions.html",
 
+    "zf2-best-practices/api-or-not-api/what-interface.html",
+
     "zf2-best-practices/importing-zf2/importing-zf2.html",
     "zf2-best-practices/importing-zf2/skeleton-application.html",
     "zf2-best-practices/importing-zf2/cleanup-skeleton-application.html",
@@ -43,8 +45,6 @@
     "zf2-best-practices/module-implementation/dont-split-modules.html",
 
     "zf2-best-practices/dependencies/a-note-on-dependencies.html",
-
-    "zf2-best-practices/api-or-not-api/what-interface.html",
 
     "outro/thanks.html"
 ]
