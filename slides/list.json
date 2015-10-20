@@ -42,5 +42,7 @@
     "zf2-best-practices/module-implementation/what-are-modules-not-for.html",
     "zf2-best-practices/module-implementation/dont-split-modules.html",
 
+    "zf2-best-practices/dependencies/a-note-on-dependencies.html",
+
     "outro/thanks.html"
 ]
