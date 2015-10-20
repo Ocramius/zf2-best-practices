@@ -30,6 +30,7 @@
 
     "zf2-best-practices/api-or-not-api/what-interface.html",
     "zf2-best-practices/api-or-not-api/apis-can-kill.html",
+    "zf2-best-practices/api-or-not-api/apis-are-easier-to-build.html",
 
     "zf2-best-practices/importing-zf2/importing-zf2.html",
     "zf2-best-practices/importing-zf2/skeleton-application.html",
