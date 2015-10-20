@@ -50,6 +50,7 @@
     "zf2-best-practices/dependencies/a-note-on-dependencies.html",
 
     "zf2-best-practices/controllers/designing-controllers.html",
+    "zf2-best-practices/controllers/don-t-design-a-controller-without-a-business-interaction.html",
 
     "outro/thanks.html"
 ]
