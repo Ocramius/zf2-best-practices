@@ -40,6 +40,7 @@
     "zf2-best-practices/module-implementation/module-config.html",
     "zf2-best-practices/module-implementation/what-are-modules-for.html",
     "zf2-best-practices/module-implementation/what-are-modules-not-for.html",
+    "zf2-best-practices/module-implementation/dont-split-modules.html",
 
     "outro/thanks.html"
 ]
