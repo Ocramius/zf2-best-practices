@@ -52,6 +52,7 @@
     "zf2-best-practices/controllers/designing-controllers.html",
     "zf2-best-practices/controllers/don-t-design-a-controller-without-a-business-interaction.html",
     "zf2-best-practices/controllers/a-controller-action-should-push-valid-data-to-domain.html",
+    "zf2-best-practices/controllers/should-controller-follow-rest-principles.html",
 
     "outro/thanks.html"
 ]
