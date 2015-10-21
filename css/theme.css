@@ -1668,7 +1668,7 @@ body {
 img.no-border {
   border: none !important;
   background: none !important;
-  box-shadow: none !important; }
+  box-shadow: 0 none !important; }
 
 div.half {
   width: 50%;
@@ -1704,7 +1704,7 @@ code {
 .reveal section img {
   border: 0;
   background: none;
-  box-shadow: 0 0 #000; }
+  box-shadow: 0 0 transparent; }
 
 .reveal pre {
   width: 100%;
