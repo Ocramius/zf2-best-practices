@@ -58,5 +58,7 @@
     "zf2-best-practices/forms/use-input-filters-where-possible.html",
     "zf2-best-practices/forms/avoid-form-binding.html",
 
+    "zf2-best-practices/persistence/persistence.html",
+
     "outro/thanks.html"
 ]
