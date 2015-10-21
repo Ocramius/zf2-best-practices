@@ -55,6 +55,7 @@
     "zf2-best-practices/controllers/should-controller-follow-rest-principles.html",
 
     "zf2-best-practices/forms/forms.html",
+    "zf2-best-practices/forms/use-input-filters-where-possible.html",
 
     "outro/thanks.html"
 ]
