@@ -54,5 +54,7 @@
     "zf2-best-practices/controllers/a-controller-action-should-push-valid-data-to-domain.html",
     "zf2-best-practices/controllers/should-controller-follow-rest-principles.html",
 
+    "zf2-best-practices/forms/forms.html",
+
     "outro/thanks.html"
 ]
