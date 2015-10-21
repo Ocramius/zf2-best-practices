@@ -66,5 +66,10 @@
     "zf2-best-practices/on-clean-code/clean-code-is-mechanical.html",
     "zf2-best-practices/on-clean-code/clean-code-has-loads-of-advantages.html",
 
+    "zf2-best-practices/on-clean-code/example/technical-debt.html",
+    "zf2-best-practices/on-clean-code/example/service-with-service-locator.html",
+    "zf2-best-practices/on-clean-code/example/service-with-direct-injection.html",
+    "zf2-best-practices/on-clean-code/example/comparison.html",
+
     "outro/thanks.html"
 ]
