@@ -60,5 +60,9 @@
 
     "zf2-best-practices/persistence/persistence.html",
 
+    "zf2-best-practices/on-clean-code/on-clean-code.html",
+    "zf2-best-practices/on-clean-code/clean-is-simple.html",
+    "zf2-best-practices/on-clean-code/how-to-keep-it-clean.html",
+
     "outro/thanks.html"
 ]
