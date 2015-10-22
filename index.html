@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Doctrine 2 ORM Best Practices</title>
+        <title>ZF2 best practices</title>
 
-        <meta name="description" content="Doctrine 2 ORM Best Practices">
+        <meta name="description" content="Zend Framework 2 best practices">
         <meta name="author" content="Marco Pivetta">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -79,6 +79,614 @@
     <br/>
     <span class="doctrine-color">Best Practices</span>
 </h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    What is this talk about?
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>Not</strong>
+    about
+    <br/>
+    <span class="php-color">Mistakes</span>
+</h2>
+
+<p class="fragment">We have enough talks like that</p>
+<p class="fragment">I don't want to be too negative</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    More <span class="zf-color">overview</span> than
+    <br/>
+    <span class="doctrine-color">in depth</span> code
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h1>
+    Where do we <span class="zf-color">start</span>?
+</h1>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    A new <span class="doctrine-color">project</span>!
+</h2>
+
+<p class="fragment">How exciting!</p>
+<p class="fragment">Yes, this happens every few years!</p>
+<p class="fragment">Sometimes it's even innovative stuff!</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Let's write a new <span class="zf-color">Controller</span>!
+</h2>
+
+<p class="fragment">(was that sarcasm?)</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Do you <strong>KNOW</strong>
+    <br/>
+    where to <span class="zf-color">start</span>?
+</h2>
+
+<p class="fragment">Did you <strong>talk</strong> to <span class="doctrine-color">the business folks</span>?</p>
+<p class="fragment">Did you <strong>talk</strong> to <span class="doctrine-color">your team</span>?</p>
+<p class="fragment">Did you <strong>look</strong> at <span class="doctrine-color">existing solutions</span>?</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    We will <span class="php-color">assume</span> that you <strong>did</strong> that.
+</h2>
+
+<p class="fragment">You did, right?</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Let's write a new <span class="zf-color">Controller</span>!
+</h2>
+
+<p class="fragment">(was that sarcasm?)</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Let's go <span class="zf-color">API First</span>!
+</h2>
+
+<p class="fragment">Because <strong>everything</strong> needs an <span class="doctrine-color">API</span>, right?</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Let's write a new <span class="zf-color">Controller</span>!
+</h2>
+
+<p class="fragment">(was that sarcasm?)</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="zf-color">Model</span> your <span class="doctrine-color">Domain</span> <strong>First</strong>
+</h2>
+
+<p class="fragment">Yes, that's the real <span class="zf-color">API First</span></p>
+<p class="fragment">This means that you need to do actual <strong>brainwork</strong>!</p>
+<p class="fragment">It's also the most <span class="doctrine-color">fun</span> part!</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Import your <span class="zf-color">testing framework</span>
+</h2>
+
+<p class="fragment">
+    We want to do
+    <abbr class="doctrine-color" title="Test Driven Development">TDD</abbr>
+</p>
+<p class="fragment"><small>(Tears driven development)</small></p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="zf-color">Play</span> with
+    <br/>
+    your <span class="doctrine-color">Domain</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="zf-color">Discover</span>
+    <br/>
+    <span class="doctrine-color">Interactions</span>
+</h2>
+
+<p class="fragment">That's what you want to <span class="zf-color">expose</span> via HTTP!</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h3>What <span class="zf-color">interface</span> will you <strong>need</strong>?</h3>
+
+<p class="fragment">Webpage?</p>
+<p class="fragment">REST API?</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h3><span class="zf-color">APIs</span> can <strong>kill</strong>...</h3>
+
+<p class="fragment">...your project.</p>
+<p class="fragment">Do you really <strong>need</strong> API first?</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h3><span class="zf-color">APIs</span> are <strong>easier</strong> to build though</h3>
+
+<p class="fragment">No frontend</p>
+<p class="fragment">No forms</p>
+<p class="fragment">No UX</p>
+<p class="fragment">Async is ok</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h3><span class="php-color">Frontend</span> is simple too!</h3>
+
+<p class="fragment">
+    If you
+    <strong>don't</strong>
+    mix it with an
+    <span class="zf-color">API</span>
+</p>
+
+<p class="fragment">
+    Or you make a <span class="doctrine-color">SPA</span>
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Importing <span class="zf-color">ZendFramework</span></h2>
+
+<p class="fragment">Only after the domain stuff!</p></section>
+
+                    
+                    
+                
+                    
+                        <section><p>As usual, <span class="zf-color">Skeleton Application</span></p>
+
+<p class="fragment">Please use <span class="doctrine-color">composer</span>, don't make lives difficult</p></section>
+
+                    
+                    
+                
+                    
+                        <section><p>Clean it up!</p>
+
+<p class="fragment">Remove <code>init_autoloader.php</code></p>
+<p class="fragment">Remove the <code>Application</code> module routes</p>
+<p class="fragment">Remove the <code>public/</code> styles</p>
+<p class="fragment">Keep it <strong>minimal</strong> first</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h3>You may keep some bits</h3>
+
+<p class="fragment">Like the <code>Application</code> module error template</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h3>Start designing your <span class="zf-color">Module</span></h3>
+
+<p class="fragment">Use <span class="doctrine-color">composer</span> for autoloading</p>
+<p class="fragment">No weird paths like <code>ModuleName/Module.php</code></p>
+<p class="fragment"><span class="doctrine-color">PSR-0</span> or <span class="doctrine-color">PSR-4</span> structure</p>
+<p class="fragment">Part of the application repository</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Start <span class="php-color">integrating</span>
+    <br/>
+    the <span class="doctrine-color">domain</span>
+    <br/>
+    with your <span class="zf-color">Module</span>
+</h2>
+
+<p class="fragment">This is <strong>not</strong> <span class="doctrine-color">thought-work</span></p>
+<p class="fragment">This is <span class="php-color">integration</span> work</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Each <span class="doctrine-color">Domain Interaction</span>
+    <br/>
+    has a <span class="zf-color">Controller</span>
+</h2>
+
+<p class="fragment">This is <strong>not</strong> <span class="doctrine-color">thought-work</span></p>
+<p class="fragment">This is <span class="php-color">integration</span> work</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>The <span class="zf-color">Module</span> class</h2>
+
+<p class="fragment">Only few interfaces implemented:</p>
+<ul class="fragment">
+    <li><code>ConfigProviderInterface</code></li>
+    <li><code>InitProviderInterface</code> (optional)</li>
+    <li><code>BootstrapListenerInterface</code> (optional)</li>
+</ul>
+<p class="fragment">Everything more is a <span class="php-color">smell</span></p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><code>Module#getConfig()</code></h2>
+
+<p class="fragment">
+    Write a test:
+    <br/>
+    <code>unserialize(serialize($module-&gt;getConfig())) == $module-&gt;getConfig()</code>
+</p>
+<p class="fragment">References to class/interface name must use <code>::class</code></p>
+<p class="fragment">Service names should use <code>::class</code></p>
+<p class="fragment">No magic key constants, use <code>Module</code> class constants</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h3>What are <span class="zf-color">Modules</span> for?</h3>
+
+<p class="fragment"><span class="php-color">reuse</span></p>
+<p class="fragment"><span class="php-color">disabling/enabling</span></p>
+<p class="fragment"><span class="doctrine-color">infrastructure</span></p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h3>What are <span class="zf-color">Modules</span> <strong>NOT</strong> for?</h3>
+
+<p class="fragment"><span class="doctrine-color">Domain</span></p>
+<p class="fragment"><span class="php-color">Namespacing</span></p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2><strong>Don't</strong> split <span class="zf-color">modules</span> unless needed</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h3>A note on <span class="zf-color">Dependencies</span></h3>
+
+<p class="fragment">
+    For every used
+    <br/>
+    <span class="php-color">class</span> /
+    <span class="php-color">function</span> /
+    <span class="php-color">constant</span>
+    <br/>
+    you need the right <span class="doctrine-color">composer.json</span> entry!
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Designing <span class="zf-color">Controllers</span></h2>
+
+<ol>
+    <li class="fragment">Convert request data to validated data</li>
+    <li class="fragment">Call domain layer</li>
+    <li class="fragment">Serialize response (view model)</li>
+</ol>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><p>
+    <strong>Don't</strong>
+    design a
+    <span class="zf-color">Controller</span>
+    without a
+    <span class="doctrine-color">Business Interaction</span>
+    first!
+</p>
+
+<p class="fragment"><small>
+    (This means that your domain must expose something about the interaction)
+</small></p></section>
+
+                    
+                    
+                
+                    
+                        <section><h3>
+    <span class="zf-color">Controllers</span>
+    pass
+    <strong>Valid Data</strong>
+    to the
+    <span class="doctrine-color">Domain</span>
+</h3>
+
+<p class="fragment">You can use <span class="doctrine-color">Commands</span></p>
+<p class="fragment">
+    You can use
+    <span class="zf-color">Value Objects</span>
+    from the
+    <span class="doctrine-color">Domain</span>
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h3>
+    Should
+    <span class="zf-color">controllers</span>
+    follow
+    <span class="php-color">REST</span>
+    principles?
+</h3>
+
+<p class="fragment">Probably only for <span class="php-color">GET</span></p>
+<p class="fragment">
+    <span class="doctrine-color">Business interactions</span>
+    <code>!=</code>
+    <span class="php-color">CRUD</span>
+</p>
+<p class="fragment">
+    <span class="php-color">RPC</span>
+    is perfectly
+    <strong>OK</strong>
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><blockquote about="https://en.wikiquote.org/wiki/The_Hitchhiker's_Guide_to_the_Galaxy_%28film%29">
+    The Encyclopedia Galactica, in its chapter on <span class="zf-color">Forms</span>
+    states that it is far too complicated to define.
+    <br/>
+    The Hitchhiker's Guide to the Galaxy has this
+    to say on the subject of <span class="zf-color">forms</span>:
+    <br/>
+    Avoid, if at all possible.
+</blockquote></section>
+
+                    
+                    
+                
+                    
+                        <section><p>Form's can't really be avoided</p>
+<p class="fragment">
+    Sometimes we can just use an <span class="zf-color">InputFilter</span>
+</p>
+<p class="fragment">
+    Build the interactions first, the form fancyness later on.
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><p>Avoid form binding</p>
+
+<p class="fragment">
+    <code>$form->bindValues($presets)</code> is perfectly <strong>OK</strong>
+</p>
+
+<p class="fragment">
+    <code>$form->getData()</code> and <code>MyCommand::fromFormData($data)</code> is simpler!
+</p>
+
+<p class="fragment">
+    <strong>MASSIVE</strong> simplification!
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Persistence</span></h2>
+
+<p class="fragment">I don't really have anything to say here</p>
+<p class="fragment">It is specific to the domain</p>
+<p class="fragment">I suggest leveraging an existing <span class="doctrine-color">repository</span> implementation</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>On <span class="doctrine-color">clean code</span></h2>
+
+<p class="fragment">Refactor a bit every day</p>
+<p class="fragment">Keep it extremely clean/<abbr class="zf-color">SOLID</abbr></p>
+<p class="fragment">No shortcuts</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Keeping code clean is <strong>very</strong> simple</h2>
+
+<p class="fragment"><small>(once you know how to do it)</small></p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>How to keep <span class="zf-color">ZF</span> code clean:</h2>
+
+<p class="fragment"><span class="zf-color">Factories</span> all the way</p>
+<p class="fragment">Reduced <span class="zf-color">Configs</span> (prefer factories)</p>
+<p class="fragment">Small <span class="doctrine-color">Methods</span></p>
+<p class="fragment"><span class="doctrine-color">SRP</span></p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Clean coding</span> is <span class="php-color">Mechanical</span></h2>
+
+<p class="fragment">You can do it with eyes closed</p>
+<p class="fragment">And with one hand.</p>
+<p class="fragment">No real amount of thought-work</p>
+<p class="fragment">Just time consuming</p>
+<p class="fragment">You can think about other stuff meanwhile!</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Clean code</span> has <strong>loads of advantages</strong></h2>
+
+<p class="fragment">You can replace any code, any time</p>
+<p class="fragment">Less bugs, or easier to tackle</p>
+<p class="fragment">Manageable technical debt</p>
+<p class="fragment">Increased code understanding</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="php-color">Technical</span> Debt Example</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><p>
+    <code>class MyService implements ServiceLocatorAwareInterface { ... }</code>
+</p>
+
+<p class="fragment">Design in 1 hour</p>
+<p class="fragment">Code in 15 minutes</p>
+<p class="fragment">Test in 10 minutes</p>
+<p class="fragment">Addition of ~120 minutes of technical debt</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><p>
+    <code>class MyService { ... }</code>
+</p>
+
+<p class="fragment">Design in 1 hour</p>
+<p class="fragment">Code in 15 minutes</p>
+<p class="fragment">Code factory in 5 minutes</p>
+<p class="fragment">Test in 10 minutes</p>
+<p class="fragment">Test factory in 10 minutes</p>
+<p class="fragment">Addition of ~30 minutes of technical debt</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Comparison</h2>
+
+<p>With <code>ServiceLocatorAwareInterface</code>: ~200 minutes of work</p>
+<p>Without <code>ServiceLocatorAwareInterface</code>: ~130 minutes of work</p>
 </section>
 
                     
